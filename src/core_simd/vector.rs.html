@@ -865,7 +865,7 @@
     <span class="attribute">#[<span class="ident">inline</span>]</span>
     <span class="kw">fn</span> <span class="ident">eq</span>(<span class="kw-2">&amp;</span><span class="self">self</span>, <span class="ident">other</span>: <span class="kw-2">&amp;</span><span class="self">Self</span>) -&gt; <span class="ident">bool</span> {
          <span class="kw">unsafe</span> {
-             <span class="ident">instrinsics::simd_eq</span>(<span class="kw-2">*</span><span class="self">self</span>, <span class="kw-2">*</span><span class="ident">other</span>) <span class="op">==</span> [<span class="bool-val">true</span>; <span class="ident">LANES</span>]
+             <span class="ident">intrinsics::simd_eq</span>(<span class="kw-2">*</span><span class="self">self</span>, <span class="kw-2">*</span><span class="ident">other</span>) <span class="op">==</span> [<span class="bool-val">true</span>; <span class="ident">LANES</span>]
          }
     }
 }
